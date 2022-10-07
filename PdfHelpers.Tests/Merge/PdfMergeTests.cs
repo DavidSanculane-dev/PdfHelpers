@@ -6,6 +6,7 @@ using PdfHelpers.Merge;
 using PdfHelpers.Resize;
 using System;
 using System.IO;
+using iTextSharp.LGPLv2.Core;
 
 namespace PdfHelpers.Tests.Resize
 {

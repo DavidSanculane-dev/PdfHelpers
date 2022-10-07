@@ -18,7 +18,7 @@ namespace PdfHelpers.Tests.Resize
             //Setup & Execute Tests...
             //*************************************************
             //RESIZE & scale LETTER Doc down to Postcard size, and validate the last page with the SMALL image is scaled up!
-            var resizeInfo = new PdfResizeInfo(PageSize.POSTCARD, PdfMarginSize.None);
+            PdfResizeInfo resizeInfo = new PdfResizeInfo(PageSize.POSTCARD, PdfMarginSize.None);
             var pdfBytes = PdfConvertHelper.ConvertImageToPdf(imageBytes, resizeInfo, PdfScalingOptions.Default);
 
             //*************************************************
